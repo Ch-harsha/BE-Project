@@ -1,18 +1,16 @@
 # BE-Project
 
 
-This Repository is all about my B.E. final year Project.
+About my B.E. final year Major Project.
 
-This Repository created on date:30-10-2021.
+So far, I've shown how to use Iverilog and Gtkwave with VScode as an IDE to verify and simulate verilog modules.
+As we all know, iverilog and gtkwave are opensource EDA tools that can only be run from a command prompt.To make things easier, I'm using vscode, which provides a compact view for dealing with Opensource tools.
 
-In This I am going to explain how to use Iverilog and Gtkwave for verification and simulation of verilog modules using VScode as IDE.
-As we know Iverilog and gtkwave are opensource EDA tools it only runs on command prompt to make it simpler i am using vscode which provide a compact view for dealing with this kind of Opensource tools .
+Please install the following before proceeding:
 
-Before getting start plz do install:
+1.icarus verilog (download link: https://bleyer.org/icarus/ for Windows).
 
-1.icarus verilog (for windows download link:https://bleyer.org/icarus/ ).
-
-2.vscode download link-https://code.visualstudio.com/download (also extentions i.Verilog-HDL/SystemVerilog/Bluespec SystemVerilog and ii.Graphviz Preview).
+2.VScode download link - https://code.visualstudio.com/download (also expansions i.Verilog-HDL/SystemVerilog/Bluespec SystemVerilog and ii.Graphviz Preview).
 
 **Lets Get Started**
 
