@@ -3,7 +3,7 @@
 
 About my B.E. final year Major Project.
 
-So far, I've shown how to use Iverilog and Gtkwave with VScode as an IDE to verify and simulate verilog modules.
+So here, I've shown how to use Iverilog and Gtkwave with VScode as an IDE to verify and simulate verilog modules.
 As we all know, iverilog and gtkwave are opensource EDA tools that can only be run from a command prompt.To make things easier, I'm using vscode, which provides a compact view for dealing with Opensource tools.
 
 Please install the following before proceeding:
@@ -12,11 +12,11 @@ Please install the following before proceeding:
 
 2.VScode download link - https://code.visualstudio.com/download (also expansions i.Verilog-HDL/SystemVerilog/Bluespec SystemVerilog and ii.Graphviz Preview).
 
-**Lets Get Started**
+**We're ready to begin**
 
 **Step-1**
 
-open vscode and in vscode click openfolder using any of the two methods
+I've opened the vscode and clicked on openfolder,it can be done in two methods as shown.
 
 
 ![1](https://user-images.githubusercontent.com/48184231/139592710-88827e56-72da-4875-84d9-8ec65815bee3.png)
@@ -25,28 +25,27 @@ open vscode and in vscode click openfolder using any of the two methods
 
 
 **Step-2**
-Creat New Folder as shown and name it. In my case Encoder
-
+Created a New Folder as shown. I named mine mux2x1.
 ![3](https://user-images.githubusercontent.com/48184231/139593324-d6b0e568-0a23-4598-8d39-37d1c23c4b23.png)
 
-after this select the created folder and click selectfolder button as shown
+Click on the selectfolder button after selecting the created folder.
 
 ![4](https://user-images.githubusercontent.com/48184231/139593346-1bd0c6df-2f99-4320-9562-73d6b0cfd04a.png)
 
 **Step-3**
 
-creat new file with .v extension for example (encoder.v), by clicking the shown button
+Created a new file with .v extension i.e., mux2x1.v by clicking on the button shown.
 
 ![5](https://user-images.githubusercontent.com/48184231/139593464-78dd702d-71b8-4db5-8338-8d440551d195.png)
 
-write the verilog code in that folder
+I've written my verilog code in the created file
 
 ![6](https://user-images.githubusercontent.com/48184231/139593656-26a4905a-1598-4244-9f72-2c62954d3453.png)
 
 (i will update a repository for various verilog modules, for now get verilog codes here : https://github.com/vision-vlsi/verilog/tree/main/Combinational_circuits )
 
 **Step-3**
-Creat a TestBench file for the written verilog module. the main key point to take care while writing testbench is as followes
+Creat a TestBench file for the written verilog module. the main key point to take care while writing testbench is as follows
 
 1.include "$dumpfile"
 
