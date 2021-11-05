@@ -35,7 +35,7 @@ Created a new file with .v extension i.e., mux2x1.v by clicking on the button sh
 
 
 I've written my verilog code in the created file
-![image](https://user-images.githubusercontent.com/93651596/140561898-2e69c945-7f02-458e-aefc-aa3ca6ead9af.png)
+![image](https://user-images.githubusercontent.com/93651596/140562911-3e69570c-d197-4447-a2cf-15f83c8f12e6.png)
 
 **Step-3**
 Creat a TestBench file for the written verilog module. the main key point to take care while writing testbench is as follows
