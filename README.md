@@ -56,7 +56,7 @@ Create a TestBench file for the written verilog module. the main key point to ta
 
 COMMANDS
 
-1.iverilog modulename testbenchname (in my case => iverilog .\mux2x1.v .\tb_mux2x1.v) then press enter.
+1.iverilog modulename testbenchname (in my case => iverilog .\mux2x1.v .\tb_mux.v) then press enter.
 
 ![8](https://user-images.githubusercontent.com/84916459/140509961-2b7a47a7-1de9-4afe-995e-a53781446b73.png)
 
