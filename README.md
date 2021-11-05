@@ -31,8 +31,8 @@ Created a New Folder as shown. I named mine mux.
 **Step-3**
 
 Created a new file with .v extension i.e., mux2x1.v by clicking on the button shown.
+![image](https://user-images.githubusercontent.com/93651596/140562692-7a6b8ce2-c404-4649-972a-6ff8a2aaf5da.png)
 
-![5](https://user-images.githubusercontent.com/48184231/139593464-78dd702d-71b8-4db5-8338-8d440551d195.png)
 
 I've written my verilog code in the created file
 ![image](https://user-images.githubusercontent.com/93651596/140561898-2e69c945-7f02-458e-aefc-aa3ca6ead9af.png)
