@@ -25,7 +25,7 @@ I've opened the vscode and clicked on openfolder,it can be done in two methods a
 
 
 **Step-2**
-Created a New Folder as shown. I named mine mux2x1.
+Created a New Folder as shown. I named mine mux.
 ![image](https://user-images.githubusercontent.com/93651596/140561318-cf0f8e86-0813-42a7-b222-81aa7b3b189b.png)
 
 **Step-3**
