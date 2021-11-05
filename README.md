@@ -35,10 +35,7 @@ Created a new file with .v extension i.e., mux2x1.v by clicking on the button sh
 ![5](https://user-images.githubusercontent.com/48184231/139593464-78dd702d-71b8-4db5-8338-8d440551d195.png)
 
 I've written my verilog code in the created file
-
-![6](https://user-images.githubusercontent.com/48184231/139593656-26a4905a-1598-4244-9f72-2c62954d3453.png)
-
-(i will update a repository for various verilog modules, for now get verilog codes here : https://github.com/vision-vlsi/verilog/tree/main/Combinational_circuits )
+![image](https://user-images.githubusercontent.com/93651596/140561898-2e69c945-7f02-458e-aefc-aa3ca6ead9af.png)
 
 **Step-3**
 Creat a TestBench file for the written verilog module. the main key point to take care while writing testbench is as follows
@@ -46,8 +43,10 @@ Creat a TestBench file for the written verilog module. the main key point to tak
 1.include "$dumpfile"
 
 2.include "$monitor"
+![image](https://user-images.githubusercontent.com/93651596/140562048-b5d74f8a-c933-4370-9091-bdbaa3ec5822.png)
 
-![7](https://user-images.githubusercontent.com/48184231/139593761-927ae4de-6297-4d33-80e0-a42f1b8cab03.png)
+![image](https://user-images.githubusercontent.com/93651596/140562141-7abd325c-e8ba-4411-b9c6-16c5f9be3917.png)
+
 
 **Step-4**
 Now open a new terminal as shown 
