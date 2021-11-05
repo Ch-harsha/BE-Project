@@ -37,8 +37,8 @@ Created a new file with .v extension i.e., mux2x1.v by clicking on the button sh
 I've written my verilog code in the created file
 ![image](https://user-images.githubusercontent.com/93651596/140562911-3e69570c-d197-4447-a2cf-15f83c8f12e6.png)
 
-**Step-3**
-Creat a TestBench file for the written verilog module. the main key point to take care while writing testbench is as follows
+**Step-4**
+Create a TestBench file for the written verilog module. the main key point to take care while writing testbench is as follows
 
 1.include "$dumpfile"
 
@@ -50,7 +50,7 @@ Creat a TestBench file for the written verilog module. the main key point to tak
 
 
 
-**STEP-4** Now open a new terminal as shown and In terminal type the following commands
+**STEP-5** Now open a new terminal as shown and In terminal type the following commands
 
 ![7](https://user-images.githubusercontent.com/84916459/140509915-22a191af-1030-40c7-925a-1a90f6df643b.png)
 
@@ -60,7 +60,7 @@ COMMANDS
 
 ![8](https://user-images.githubusercontent.com/84916459/140509961-2b7a47a7-1de9-4afe-995e-a53781446b73.png)
 
-**STEP-5**
+**STEP-6**
 
 2.vvp a.out
 
@@ -70,7 +70,7 @@ you will be able to see resut in terminal as well as a new file with .vcd extent
 
 ![10](https://user-images.githubusercontent.com/84916459/140510036-911b9117-8b3f-4de1-b936-024555bd18d5.png)
 
-STEP-7 :-for generating waveforms we are using gtkwave EDA Tool for waveform representation. use the following command for opening .vcd file in gtkwave
+**STEP-7** :-for generating waveforms we are using gtkwave EDA Tool for waveform representation. use the following command for opening .vcd file in gtkwave
 
 ![11](https://user-images.githubusercontent.com/84916459/140510093-886e747c-ff12-4b26-a743-b4ab92df5ced.png)
 
@@ -87,10 +87,11 @@ FOR THE SYNTHESYS PROCESS
 
 The main tool which we are using for now for synthesys process is YOSYS(Download link:http://www.clifford.at/yosys/download.html )
 
-in this synthesys process we are using SKY130 liberary File. all the required files will be provided .
-![16](https://user-images.githubusercontent.com/84916459/140510352-30d04f1e-d993-4970-957d-d3ba4e260ee9.png)
-![17](https://user-images.githubusercontent.com/84916459/140510355-a2201cb6-157b-42f7-899a-315ee791c449.png)
-![18](https://user-images.githubusercontent.com/84916459/140510360-dfe28680-97cc-4d07-b186-3fd68ecaa78e.png)
+In this synthesys process we are using SKY130 liberary File. all the required files will be provided .
+![image](https://user-images.githubusercontent.com/93651596/140564257-795ded2a-02a6-400e-b102-674b446365a0.png)
+![image](https://user-images.githubusercontent.com/93651596/140564318-ba681ef9-6468-4471-8d4b-9f0c39d8e722.png)
+![image](https://user-images.githubusercontent.com/93651596/140564384-bc221f77-07fe-4269-8ccd-9b51b1431c80.png)
+
 
 
 
@@ -155,7 +156,7 @@ now we can exit for yosys tool for tha simply type "exit" and hit enter
 
 ![31](https://user-images.githubusercontent.com/84916459/140510875-a38bd9a1-4b6b-4f2c-8e50-c0847b341bb6.png)
 
-at the end you will report.txt file and netlist.v
+at the end two files are generated i.e.,report.txt file and netlist.v
 
 in which report.txt file shows the statistical data of the design made 
 
