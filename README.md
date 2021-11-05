@@ -26,11 +26,8 @@ I've opened the vscode and clicked on openfolder,it can be done in two methods a
 
 **Step-2**
 Created a New Folder as shown. I named mine mux2x1.
-![3](https://user-images.githubusercontent.com/48184231/139593324-d6b0e568-0a23-4598-8d39-37d1c23c4b23.png)
+![image](https://user-images.githubusercontent.com/93651596/140559892-7c026f56-59b8-4f37-9233-7cab64c58495.png)
 
-Click on the selectfolder button after selecting the created folder.
-
-![4](https://user-images.githubusercontent.com/48184231/139593346-1bd0c6df-2f99-4320-9562-73d6b0cfd04a.png)
 
 **Step-3**
 
