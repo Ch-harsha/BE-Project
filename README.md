@@ -95,70 +95,68 @@ In this synthesys process we are using SKY130 liberary File. all the required fi
 
 
 
-STEP-1
+**STEP-1**
 
 In terminal Type yosys to open yosys tool
 
 ![19](https://user-images.githubusercontent.com/84916459/140510389-3364006e-3406-4f9e-9500-0e9f1ee369e6.png)
 
-STEP-2
+**STEP-2**
 
 then follow the next command Type: read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ![20](https://user-images.githubusercontent.com/84916459/140510519-b11ac485-f83b-4cd7-ac47-03452cf3a92f.png)
 
-STEP-3
+**STEP-3**
 
 after that type : read_verilog mux2x1.v // this command is use for reading module wirtten in verilog
 
 ![21](https://user-images.githubusercontent.com/84916459/140510540-6ee2b6a5-97e1-4d21-bfce-81ace953c715.png)
 
-STEP-4
+**STEP-4**
 
 after that use syntax for synthesys process : synth -top modulename // modulename means the name given in the main verilog code file for example "module modulename(i,o)"
 
 ![22](https://user-images.githubusercontent.com/84916459/140510552-22c1fb7f-9898-4058-a44d-721654dc6049.png)
 
-STEP-5
+**STEP-5**
 
 For mapping flip-flops to library use following command : dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ![23](https://user-images.githubusercontent.com/84916459/140510586-8650d19e-79e8-4153-aabb-8e2f10f707f3.png)
 
-STEP-6
+**STEP-6**
 
 For mapping logic to library file use following command : abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ![24](https://user-images.githubusercontent.com/84916459/140510609-c073332a-9aaa-4bc2-9748-45ac8f2e844e.png)
 
-STEP-7
+**STEP-7**
 
 for downloading netlist file type : show
 
 ![25](https://user-images.githubusercontent.com/84916459/140510650-f33e0c62-f8cc-4f5c-a63b-e4d467750188.png)
 ![26](https://user-images.githubusercontent.com/84916459/140510700-15e5a171-ce77-4cbb-ae35-ae86f5bfa9bb.png)
 
-STEP-8
+**STEP-8**
 
 now use following command : tee -o report.txt stat -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ![27](https://user-images.githubusercontent.com/84916459/140510726-269ea10f-4a05-40fc-82f7-5c856f2cf413.png)
 
-STEP-9
+**STEP-9**
 
 we are done with synthesys now we need to download or write the synthesys file into some sort of file mainly in verilog formate for this use : write_verilog -noattr netlist.v
 
 ![29](https://user-images.githubusercontent.com/84916459/140510820-fc4a2b09-958d-4758-8b5e-a5b80d455925.png)
 
-Step-10
+**Step-10**
 
-now we can exit for yosys tool for tha simply type "exit" and hit enter
+now we can exit from yosys tool for that simply type "exit" and hit enter button.
 
 ![31](https://user-images.githubusercontent.com/84916459/140510875-a38bd9a1-4b6b-4f2c-8e50-c0847b341bb6.png)
 
-at the end two files are generated i.e.,report.txt file and netlist.v
-
-in which report.txt file shows the statistical data of the design made 
+Here report.txt file shows the statistical data of the design made 
 
 ![28](https://user-images.githubusercontent.com/84916459/140510939-8dc0145f-3c11-46cb-9353-b8a228876885.png)
 
@@ -168,6 +166,6 @@ and netlist.v file shows the all the detailed information which requred to make 
 
 FOR GATE LEVEL STIMULATION PROCESS
 
-In this we are going to do Gatelevel simulation. for that we are going to use following files 1.netlist.v 2.sky130_fd_sc_hd.v 3.testbench.v use the following code for gatelevel simulation : iverilog netlist.v sky130_fd_sc_hd.v tb_mux2x1.v
+In this we are going to do Gatelevel simulation. for that we are going to use following files 1.netlist.v 2.sky130_fd_sc_hd.v 3.testbench.v use the following code for gatelevel simulation : iverilog netlist.v sky130_fd_sc_hd.v tb_mux.v
 
 ![32](https://user-images.githubusercontent.com/84916459/140510984-7a7da4d1-4fa5-46c5-b10c-afa2433809e0.png)
