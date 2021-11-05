@@ -48,43 +48,125 @@ Creat a TestBench file for the written verilog module. the main key point to tak
 ![image](https://user-images.githubusercontent.com/93651596/140562141-7abd325c-e8ba-4411-b9c6-16c5f9be3917.png)
 
 
-**Step-4**
-Now open a new terminal as shown 
-
-![8](https://user-images.githubusercontent.com/48184231/139593788-c1b02dc3-790a-478c-807e-ccbf29ccc721.png)
-
-In terminal type the following commands 
-
-1. **iverilog modulename testbenchname** in my case => iverilog encoder.v tb.v
-![10](https://user-images.githubusercontent.com/48184231/139594344-aa18f396-fc46-46fb-b4c4-20888a5c57d4.png)
 
 
-after this a new file "a.out" is generated use following command
-![11](https://user-images.githubusercontent.com/48184231/139594347-277ba208-8da1-4ffd-a2a3-70d6f05685dd.png)
+**STEP-4** Now open a new terminal as shown and In terminal type the following commands
 
-2.**vvp a.out**
-![12](https://user-images.githubusercontent.com/48184231/139594352-c41da818-2c6f-450f-9f2a-bdcf8c61d678.png)
+![7](https://user-images.githubusercontent.com/84916459/140509915-22a191af-1030-40c7-925a-1a90f6df643b.png)
 
-you will be able to see resut in terminal as well as a new file with .vcd extention which is further use for generating waveforms![13](https://user-images.githubusercontent.com/48184231/139594359-9b6ee381-8244-4a14-a40f-32fcc96c345a.png)
+COMMANDS
 
+1.iverilog modulename testbenchname (in my case => iverilog .\mux2x1.v .\tb_mux2x1.v) then press enter.
 
-for generating waveforms we are using gtkwave EDA Tool for waveform representation. use the following command for opening .vcd file in gtkwave
+![8](https://user-images.githubusercontent.com/84916459/140509961-2b7a47a7-1de9-4afe-995e-a53781446b73.png)
 
-3.**gtkwave modulename.vcd** in my case => gtkwave encoder8to3.vcd
-![14](https://user-images.githubusercontent.com/48184231/139594369-13593648-5748-44a7-ab84-50a4e36cec9e.png)
+**STEP-5**
+
+2.vvp a.out
+
+![9](https://user-images.githubusercontent.com/84916459/140510003-6a29b7fa-88b8-4e18-9619-e6fb1a96bf32.png)
+
+you will be able to see resut in terminal as well as a new file with .vcd extention which is further use for generating waveforms
+
+![10](https://user-images.githubusercontent.com/84916459/140510036-911b9117-8b3f-4de1-b936-024555bd18d5.png)
+
+STEP-7 :-for generating waveforms we are using gtkwave EDA Tool for waveform representation. use the following command for opening .vcd file in gtkwave
+
+![11](https://user-images.githubusercontent.com/84916459/140510093-886e747c-ff12-4b26-a743-b4ab92df5ced.png)
+
+3.gtkwave modulename.vcd in my case => gtkwave mux2x1.vcd
+
 
 the following window pop's up click the testbench as shown and append ports.after that click zoom fit butten to observe all changing waveforms in a single window use mouse and click on the various points on waves to observe the values on left signals window.
-![15](https://user-images.githubusercontent.com/48184231/139594376-87661085-476f-436c-bbca-67b8a1c8143c.png)
+![12](https://user-images.githubusercontent.com/84916459/140510111-57af7337-8e49-4532-a685-c7ee132c06bd.png)
+![13](https://user-images.githubusercontent.com/84916459/140510295-0e2ce87e-763a-4d39-ae43-374a1ac707bc.png)
+![![14](https://user-images.githubusercontent.com/84916459/140510185-9e12bf8a-22fd-4dba-9307-95472bcb2e1d.png)
+![15](https://user-images.githubusercontent.com/84916459/140510317-06a6fbb2-4298-4af4-bc71-15397d5d38e6.png)
 
-![16](https://user-images.githubusercontent.com/48184231/139594411-a0669e25-12ff-4128-b693-827adf87d99b.png)
+FOR THE SYNTHESYS PROCESS
 
-![17](https://user-images.githubusercontent.com/48184231/139594412-896d3750-e51f-40a9-881a-bcca63708ffd.png)
+The main tool which we are using for now for synthesys process is YOSYS(Download link:http://www.clifford.at/yosys/download.html )
+
+in this synthesys process we are using SKY130 liberary File. all the required files will be provided .
+![16](https://user-images.githubusercontent.com/84916459/140510352-30d04f1e-d993-4970-957d-d3ba4e260ee9.png)
+![17](https://user-images.githubusercontent.com/84916459/140510355-a2201cb6-157b-42f7-899a-315ee791c449.png)
+![18](https://user-images.githubusercontent.com/84916459/140510360-dfe28680-97cc-4d07-b186-3fd68ecaa78e.png)
 
 
 
+STEP-1
 
-**all codes in one place**
+In terminal Type yosys to open yosys tool
 
-1. iverilog modulename.v testbenchname.v
-2. vvp a.out
-3. gtkwave name.vcd
+![19](https://user-images.githubusercontent.com/84916459/140510389-3364006e-3406-4f9e-9500-0e9f1ee369e6.png)
+
+STEP-2
+
+then follow the next command Type: read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib
+
+![20](https://user-images.githubusercontent.com/84916459/140510519-b11ac485-f83b-4cd7-ac47-03452cf3a92f.png)
+
+STEP-3
+
+after that type : read_verilog mux2x1.v // this command is use for reading module wirtten in verilog
+
+![21](https://user-images.githubusercontent.com/84916459/140510540-6ee2b6a5-97e1-4d21-bfce-81ace953c715.png)
+
+STEP-4
+
+after that use syntax for synthesys process : synth -top modulename // modulename means the name given in the main verilog code file for example "module modulename(i,o)"
+
+![22](https://user-images.githubusercontent.com/84916459/140510552-22c1fb7f-9898-4058-a44d-721654dc6049.png)
+
+STEP-5
+
+For mapping flip-flops to library use following command : dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+
+![23](https://user-images.githubusercontent.com/84916459/140510586-8650d19e-79e8-4153-aabb-8e2f10f707f3.png)
+
+STEP-6
+
+For mapping logic to library file use following command : abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+
+![24](https://user-images.githubusercontent.com/84916459/140510609-c073332a-9aaa-4bc2-9748-45ac8f2e844e.png)
+
+STEP-7
+
+for downloading netlist file type : show
+
+![25](https://user-images.githubusercontent.com/84916459/140510650-f33e0c62-f8cc-4f5c-a63b-e4d467750188.png)
+![26](https://user-images.githubusercontent.com/84916459/140510700-15e5a171-ce77-4cbb-ae35-ae86f5bfa9bb.png)
+
+STEP-8
+
+now use following command : tee -o report.txt stat -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+
+![27](https://user-images.githubusercontent.com/84916459/140510726-269ea10f-4a05-40fc-82f7-5c856f2cf413.png)
+
+STEP-9
+
+we are done with synthesys now we need to download or write the synthesys file into some sort of file mainly in verilog formate for this use : write_verilog -noattr netlist.v
+
+![29](https://user-images.githubusercontent.com/84916459/140510820-fc4a2b09-958d-4758-8b5e-a5b80d455925.png)
+
+Step-10
+
+now we can exit for yosys tool for tha simply type "exit" and hit enter
+
+![31](https://user-images.githubusercontent.com/84916459/140510875-a38bd9a1-4b6b-4f2c-8e50-c0847b341bb6.png)
+
+at the end you will report.txt file and netlist.v
+
+in which report.txt file shows the statistical data of the design made 
+
+![28](https://user-images.githubusercontent.com/84916459/140510939-8dc0145f-3c11-46cb-9353-b8a228876885.png)
+
+and netlist.v file shows the all the detailed information which requred to make a intigrated Circuit. This is the file we give to foundry for making a physical copy.
+
+![30](https://user-images.githubusercontent.com/84916459/140510955-97d2bf7a-1dd2-438c-8339-bf2542db0496.png)
+
+FOR GATE LEVEL STIMULATION PROCESS
+
+In this we are going to do Gatelevel simulation. for that we are going to use following files 1.netlist.v 2.sky130_fd_sc_hd.v 3.testbench.v use the following code for gatelevel simulation : iverilog netlist.v sky130_fd_sc_hd.v tb_mux2x1.v
+
+![32](https://user-images.githubusercontent.com/84916459/140510984-7a7da4d1-4fa5-46c5-b10c-afa2433809e0.png)
