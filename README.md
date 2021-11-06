@@ -10,7 +10,7 @@ Please install the following before proceeding:
 
 1.icarus verilog (download link: https://bleyer.org/icarus/ for Windows).
 
-2.VScode download link - https://code.visualstudio.com/download (also expansions i.Verilog-HDL/SystemVerilog/Bluespec SystemVerilog and ii.Graphviz Preview).
+2.VScode download link - https://code.visualstudio.com/download (also extentions i.Verilog-HDL/SystemVerilog/Bluespec SystemVerilog and ii.Graphviz Preview).
 
 **We're ready to begin**
 
