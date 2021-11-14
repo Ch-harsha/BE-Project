@@ -1,7 +1,8 @@
 # BE-Project
 
+I have created this repository on 02-11-2021.
 
-About my B.E. final year Major Project.
+This repository is about my B.E. final year Major Project.
 
 So here, I've shown how to use Iverilog and Gtkwave with VScode as an IDE to verify and simulate verilog modules.
 As we all know, iverilog and gtkwave are opensource EDA tools that can only be run from a command prompt.To make things easier, I'm using vscode, which provides a compact view for dealing with Opensource tools.
