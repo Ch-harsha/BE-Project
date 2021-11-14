@@ -1,6 +1,6 @@
 # BE-Project
 
-I have created this repository on 02-11-2021.
+Hello, my name is Ch.Harsha Vardhan, and I am a student at Muffakham Jah College of Engineering and Technology studying Electronics and Communication Engineering.I have created this repository on 02-11-2021.
 
 This repository is about my B.E. final year Major Project.
 
